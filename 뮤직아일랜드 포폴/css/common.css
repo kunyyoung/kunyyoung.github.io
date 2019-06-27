@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* reset */
+
+body {
+	font:normal 12px "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
+	line-height:1.3;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+br	{
+	letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+	font-weight:bold;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {
+	list-style:none;
+}
+img {
+	border:0 none;
+	vertical-align: middle;
+}
+
+
+/* Common Modual */
+
+/*header .nav ul.on { display: none; }*/
+
+.wrap { width: 100%; height: 100%; position: relative; min-width: 320px; margin:0 auto; }
+h2 { margin: 0 0 10px 0; }
+/* HEADER */
+header {
+	position: fixed; 
+	width: 100%; 
+	min-width: 320px; 
+	height: 185px;
+	margin: 0 0 0 0; 
+	padiing:0;  
+	background:#36383b; 
+	z-index: 90; 
+}
+header h1{ text-align:center; padding:30px 0 20px; }
+header .nav{
+	position:relative; 
+	border-top:1px solid #4a4c4f;
+	border-bottom:1px solid #1c1e20;
+	width:100%; 
+	height:66px; 
+	margin:0 auto; 
+	background:#2e3032; 
+	z-index:80; 
+}
+header .nav > ul {max-width:1400px; margin:0 auto;}
+header .nav > ul > li { 
+	width:auto; 
+	padding-right:4.5%; 
+	height:66px; 
+	float:left; 
+	font-family: 'Oswald', sans-serif; 
+	font-size:20px;
+	 }
+header .nav > ul > li:last-child{padding-right:0;}
+header .nav > ul > li a{
+	color:#fff; 
+	display:block; 
+	font-size:18px; 
+	line-height:66px; 
+	font-weight:600;
+}
+header .nav > ul > li a:hover {color:#ef4035} /* 호버 시 색 바꾸기 */
+header .nav > ul > li a span {
+	display: marker; padding-top:20px; }
+header .nav > ul > li a:hover span{border-top:1px solid #ef4035;} /*a에 호버시, 스판 위에 색선 띄우기*/
+
+ 
+/* MAIN */
+
+main h2 {
+	font-family: 'Oswald', sans-serif;
+	color: #565656;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 200;
+	line-height: 110%;
+	margin-bottom: 30px;
+}
+main h2 span {
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+}
+main h2 span:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 6px;
+    height: 1px;
+    background: #fff;
+    z-index: 1;
+}
+
+
+
+
